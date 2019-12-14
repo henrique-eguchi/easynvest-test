@@ -12,42 +12,42 @@ protocol FixedIncomeHomeDelegate: class {
     func didTapSimulate()
 }
 
-class FixedIncomeHomeView: UIView {
+final class FixedIncomeHomeView: UIView {
     
     weak var delegate: FixedIncomeHomeDelegate?
     
-    override init(frame: CGRect) {
+    override init(frame: CGRect = .zero) {
         super.init(frame: frame)
         
         setupView()
     }
     
+    /// Interface builder
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
         setupView()
     }
     
-    lazy var welcomeLabel: UILabel = {
-        var lbl = UILabel()
-        lbl.text = "Easynvest"
-        lbl.textAlignment = .center
-        
-        return lbl
-    }()
-    
-    private func setupView() {
-        self.backgroundColor = .white
-        self.addSubview(welcomeLabel)
-        
-        welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        let horizontalConstraint = NSLayoutConstraint(item: welcomeLabel, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
-        let verticalConstraint = NSLayoutConstraint(item: welcomeLabel, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1, constant: 0)
-        let widthConstraint = NSLayoutConstraint(item: welcomeLabel, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 100)
-        let heightConstraint = NSLayoutConstraint(item: welcomeLabel, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 100)
-        
-        self.addConstraints([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
-    }
+    //lazy - Permite chamar método dentro da closure de criação
+    lazy var simulateButton = EasynvestButton(frame: CGRect.zero)
 }
 
+extension FixedIncomeHomeView: ViewCodeTemplate {
+    func buildViewHierarchy() {
+        addSubview(simulateButton)
+        
+    }
+    
+    func setupConstraints() {
+        simulateButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15).isActive = true
+        simulateButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15).isActive = true
+        simulateButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        simulateButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -15).isActive = true
+    }
+    
+    func setupAdditionalConfiguration() {
+        simulateButton.setTitle("Simular", for: .normal)
+    }
+
+}

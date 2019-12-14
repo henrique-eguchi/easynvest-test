@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012A948A9135ADE13BB1046C /* Pods_easynvest_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D6B2C70B025E67BD4B6717 /* Pods_easynvest_test.framework */; };
 		1F09827F23A1D3A300467D9D /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09827E23A1D3A300467D9D /* ApplicationCoordinator.swift */; };
 		1F09828323A1D5A200467D9D /* FixedIncomeHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09828223A1D5A200467D9D /* FixedIncomeHomeCoordinator.swift */; };
 		1F09828623A1D72600467D9D /* FixedIncomeHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09828523A1D72600467D9D /* FixedIncomeHomeViewController.swift */; };
 		1F09828823A1D87F00467D9D /* FixedIncomeHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09828723A1D87F00467D9D /* FixedIncomeHomeView.swift */; };
 		1F09828A23A1E17800467D9D /* HasCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09828923A1E17800467D9D /* HasCustomView.swift */; };
 		1F09828C23A1E28C00467D9D /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09828B23A1E28C00467D9D /* CustomViewController.swift */; };
+		1F512A6923A46F6100E5247A /* ViewCodeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F512A6823A46F6100E5247A /* ViewCodeTemplate.swift */; };
+		1F512A6C23A4920700E5247A /* EasynvestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F512A6B23A4920700E5247A /* EasynvestButton.swift */; };
+		1F512A6E23A494CC00E5247A /* UIColor+EasynvestPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F512A6D23A494CC00E5247A /* UIColor+EasynvestPallete.swift */; };
+		1F512A7023A4978200E5247A /* UIColor+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F512A6F23A4978200E5247A /* UIColor+Conversions.swift */; };
+		1F512A7E23A4A71800E5247A /* RationalDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F512A7C23A4A71800E5247A /* RationalDisplay-Light.ttf */; };
+		1F512A7F23A4A71800E5247A /* RationalDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F512A7D23A4A71800E5247A /* RationalDisplay-Medium.ttf */; };
 		1FA2984E23A15BA80032FF1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2984D23A15BA80032FF1C /* AppDelegate.swift */; };
 		1FA2985023A15BA80032FF1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2984F23A15BA80032FF1C /* SceneDelegate.swift */; };
 		1FA2985723A15BA90032FF1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FA2985623A15BA90032FF1C /* Assets.xcassets */; };
 		1FA2985A23A15BA90032FF1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA2985823A15BA90032FF1C /* LaunchScreen.storyboard */; };
 		1FA2986523A15BAA0032FF1C /* easynvest_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2986423A15BAA0032FF1C /* easynvest_testTests.swift */; };
 		1FA2987023A15BAA0032FF1C /* easynvest_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2986F23A15BAA0032FF1C /* easynvest_testUITests.swift */; };
+		63D89657E9E57E7B25A5ACA6 /* Pods_easynvest_test_easynvest_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFBFCBD068094884B015770 /* Pods_easynvest_test_easynvest_testUITests.framework */; };
+		B164A37BC551D1FEB8E97169 /* Pods_easynvest_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2909128AECB82C4392A7041 /* Pods_easynvest_testTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,12 @@
 		1F09828723A1D87F00467D9D /* FixedIncomeHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedIncomeHomeView.swift; sourceTree = "<group>"; };
 		1F09828923A1E17800467D9D /* HasCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCustomView.swift; sourceTree = "<group>"; };
 		1F09828B23A1E28C00467D9D /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		1F512A6823A46F6100E5247A /* ViewCodeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeTemplate.swift; sourceTree = "<group>"; };
+		1F512A6B23A4920700E5247A /* EasynvestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestButton.swift; sourceTree = "<group>"; };
+		1F512A6D23A494CC00E5247A /* UIColor+EasynvestPallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EasynvestPallete.swift"; sourceTree = "<group>"; };
+		1F512A6F23A4978200E5247A /* UIColor+Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Conversions.swift"; sourceTree = "<group>"; };
+		1F512A7C23A4A71800E5247A /* RationalDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RationalDisplay-Light.ttf"; sourceTree = "<group>"; };
+		1F512A7D23A4A71800E5247A /* RationalDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RationalDisplay-Medium.ttf"; sourceTree = "<group>"; };
 		1FA2984A23A15BA80032FF1C /* easynvest-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "easynvest-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA2984D23A15BA80032FF1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FA2984F23A15BA80032FF1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +72,15 @@
 		1FA2986B23A15BAA0032FF1C /* easynvest-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "easynvest-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA2986F23A15BAA0032FF1C /* easynvest_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easynvest_testUITests.swift; sourceTree = "<group>"; };
 		1FA2987123A15BAA0032FF1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA66D8A8E50D50E9CF8C0CF /* Pods-easynvest-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-test.debug.xcconfig"; path = "Target Support Files/Pods-easynvest-test/Pods-easynvest-test.debug.xcconfig"; sourceTree = "<group>"; };
+		6FFBFCBD068094884B015770 /* Pods_easynvest_test_easynvest_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easynvest_test_easynvest_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7671893D19CF5F90E191004A /* Pods-easynvest-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-test.release.xcconfig"; path = "Target Support Files/Pods-easynvest-test/Pods-easynvest-test.release.xcconfig"; sourceTree = "<group>"; };
+		7674BE29958749BBF734AF64 /* Pods-easynvest-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-testTests.release.xcconfig"; path = "Target Support Files/Pods-easynvest-testTests/Pods-easynvest-testTests.release.xcconfig"; sourceTree = "<group>"; };
+		A02BBD204516A7A3DB08798F /* Pods-easynvest-test-easynvest-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-test-easynvest-testUITests.release.xcconfig"; path = "Target Support Files/Pods-easynvest-test-easynvest-testUITests/Pods-easynvest-test-easynvest-testUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A0D6B2C70B025E67BD4B6717 /* Pods_easynvest_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easynvest_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6555AC76E03D25EFEDB11F6 /* Pods-easynvest-test-easynvest-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-test-easynvest-testUITests.debug.xcconfig"; path = "Target Support Files/Pods-easynvest-test-easynvest-testUITests/Pods-easynvest-test-easynvest-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2909128AECB82C4392A7041 /* Pods_easynvest_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easynvest_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBA1F689EBAE537545E7959 /* Pods-easynvest-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-testTests.debug.xcconfig"; path = "Target Support Files/Pods-easynvest-testTests/Pods-easynvest-testTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012A948A9135ADE13BB1046C /* Pods_easynvest_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B164A37BC551D1FEB8E97169 /* Pods_easynvest_testTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D89657E9E57E7B25A5ACA6 /* Pods_easynvest_test_easynvest_testUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +114,10 @@
 		1F09827A23A1D34900467D9D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				1F09828923A1E17800467D9D /* HasCustomView.swift */,
-				1F09828B23A1E28C00467D9D /* CustomViewController.swift */,
+				1F512A7123A49B6900E5247A /* ViewController */,
+				1F512A6723A46E8B00E5247A /* ViewCode */,
+				1F512A6D23A494CC00E5247A /* UIColor+EasynvestPallete.swift */,
+				1F512A6F23A4978200E5247A /* UIColor+Conversions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -96,6 +125,7 @@
 		1F09827B23A1D34E00467D9D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1F512A6A23A491D600E5247A /* Components */,
 				1F09828023A1D4DA00467D9D /* FixedIncome */,
 				1F09827D23A1D38400467D9D /* Coordinator */,
 			);
@@ -143,6 +173,49 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1F512A6723A46E8B00E5247A /* ViewCode */ = {
+			isa = PBXGroup;
+			children = (
+				1F512A6823A46F6100E5247A /* ViewCodeTemplate.swift */,
+			);
+			path = ViewCode;
+			sourceTree = "<group>";
+		};
+		1F512A6A23A491D600E5247A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1F512A6B23A4920700E5247A /* EasynvestButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1F512A7123A49B6900E5247A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1F09828923A1E17800467D9D /* HasCustomView.swift */,
+				1F09828B23A1E28C00467D9D /* CustomViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1F512A7623A4A51100E5247A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FA2985623A15BA90032FF1C /* Assets.xcassets */,
+				1F512A7723A4A51700E5247A /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1F512A7723A4A51700E5247A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1F512A7C23A4A71800E5247A /* RationalDisplay-Light.ttf */,
+				1F512A7D23A4A71800E5247A /* RationalDisplay-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		1FA2984123A15BA80032FF1C = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +223,8 @@
 				1FA2986323A15BAA0032FF1C /* easynvest-testTests */,
 				1FA2986E23A15BAA0032FF1C /* easynvest-testUITests */,
 				1FA2984B23A15BA80032FF1C /* Products */,
+				4F10080884D85CE117508615 /* Pods */,
+				636067FD77A7FCA5077A0582 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,12 +241,12 @@
 		1FA2984C23A15BA80032FF1C /* easynvest-test */ = {
 			isa = PBXGroup;
 			children = (
+				1F512A7623A4A51100E5247A /* Resources */,
 				1F09827C23A1D35400467D9D /* Repositories */,
 				1F09827B23A1D34E00467D9D /* Scenes */,
 				1F09827A23A1D34900467D9D /* Utils */,
 				1FA2984D23A15BA80032FF1C /* AppDelegate.swift */,
 				1FA2984F23A15BA80032FF1C /* SceneDelegate.swift */,
-				1FA2985623A15BA90032FF1C /* Assets.xcassets */,
 				1FA2985823A15BA90032FF1C /* LaunchScreen.storyboard */,
 				1FA2985B23A15BA90032FF1C /* Info.plist */,
 			);
@@ -196,6 +271,29 @@
 			path = "easynvest-testUITests";
 			sourceTree = "<group>";
 		};
+		4F10080884D85CE117508615 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AA66D8A8E50D50E9CF8C0CF /* Pods-easynvest-test.debug.xcconfig */,
+				7671893D19CF5F90E191004A /* Pods-easynvest-test.release.xcconfig */,
+				B6555AC76E03D25EFEDB11F6 /* Pods-easynvest-test-easynvest-testUITests.debug.xcconfig */,
+				A02BBD204516A7A3DB08798F /* Pods-easynvest-test-easynvest-testUITests.release.xcconfig */,
+				FEBA1F689EBAE537545E7959 /* Pods-easynvest-testTests.debug.xcconfig */,
+				7674BE29958749BBF734AF64 /* Pods-easynvest-testTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		636067FD77A7FCA5077A0582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0D6B2C70B025E67BD4B6717 /* Pods_easynvest_test.framework */,
+				6FFBFCBD068094884B015770 /* Pods_easynvest_test_easynvest_testUITests.framework */,
+				D2909128AECB82C4392A7041 /* Pods_easynvest_testTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,6 +301,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FA2987423A15BAA0032FF1C /* Build configuration list for PBXNativeTarget "easynvest-test" */;
 			buildPhases = (
+				1AFF1446AFF4DD7CD4CC1E0C /* [CP] Check Pods Manifest.lock */,
 				1FA2984623A15BA80032FF1C /* Sources */,
 				1FA2984723A15BA80032FF1C /* Frameworks */,
 				1FA2984823A15BA80032FF1C /* Resources */,
@@ -220,6 +319,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FA2987723A15BAA0032FF1C /* Build configuration list for PBXNativeTarget "easynvest-testTests" */;
 			buildPhases = (
+				D73604FCE7FD79974D2F370E /* [CP] Check Pods Manifest.lock */,
 				1FA2985C23A15BAA0032FF1C /* Sources */,
 				1FA2985D23A15BAA0032FF1C /* Frameworks */,
 				1FA2985E23A15BAA0032FF1C /* Resources */,
@@ -238,6 +338,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FA2987A23A15BAA0032FF1C /* Build configuration list for PBXNativeTarget "easynvest-testUITests" */;
 			buildPhases = (
+				DF382D026AF29100D6152511 /* [CP] Check Pods Manifest.lock */,
 				1FA2986723A15BAA0032FF1C /* Sources */,
 				1FA2986823A15BAA0032FF1C /* Frameworks */,
 				1FA2986923A15BAA0032FF1C /* Resources */,
@@ -300,7 +401,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F512A7F23A4A71800E5247A /* RationalDisplay-Medium.ttf in Resources */,
 				1FA2985A23A15BA90032FF1C /* LaunchScreen.storyboard in Resources */,
+				1F512A7E23A4A71800E5247A /* RationalDisplay-Light.ttf in Resources */,
 				1FA2985723A15BA90032FF1C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +424,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AFF1446AFF4DD7CD4CC1E0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-easynvest-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73604FCE7FD79974D2F370E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-easynvest-testTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF382D026AF29100D6152511 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-easynvest-test-easynvest-testUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1FA2984623A15BA80032FF1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -330,9 +502,13 @@
 				1F09828A23A1E17800467D9D /* HasCustomView.swift in Sources */,
 				1F09827F23A1D3A300467D9D /* ApplicationCoordinator.swift in Sources */,
 				1FA2984E23A15BA80032FF1C /* AppDelegate.swift in Sources */,
+				1F512A6E23A494CC00E5247A /* UIColor+EasynvestPallete.swift in Sources */,
+				1F512A7023A4978200E5247A /* UIColor+Conversions.swift in Sources */,
 				1F09828623A1D72600467D9D /* FixedIncomeHomeViewController.swift in Sources */,
 				1F09828323A1D5A200467D9D /* FixedIncomeHomeCoordinator.swift in Sources */,
 				1F09828823A1D87F00467D9D /* FixedIncomeHomeView.swift in Sources */,
+				1F512A6923A46F6100E5247A /* ViewCodeTemplate.swift in Sources */,
+				1F512A6C23A4920700E5247A /* EasynvestButton.swift in Sources */,
 				1FA2985023A15BA80032FF1C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +672,7 @@
 		};
 		1FA2987523A15BAA0032FF1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AA66D8A8E50D50E9CF8C0CF /* Pods-easynvest-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +691,7 @@
 		};
 		1FA2987623A15BAA0032FF1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7671893D19CF5F90E191004A /* Pods-easynvest-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +710,7 @@
 		};
 		1FA2987823A15BAA0032FF1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEBA1F689EBAE537545E7959 /* Pods-easynvest-testTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +733,7 @@
 		};
 		1FA2987923A15BAA0032FF1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7674BE29958749BBF734AF64 /* Pods-easynvest-testTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +756,7 @@
 		};
 		1FA2987B23A15BAA0032FF1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6555AC76E03D25EFEDB11F6 /* Pods-easynvest-test-easynvest-testUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -596,6 +777,7 @@
 		};
 		1FA2987C23A15BAA0032FF1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A02BBD204516A7A3DB08798F /* Pods-easynvest-test-easynvest-testUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
