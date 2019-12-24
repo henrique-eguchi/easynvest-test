@@ -9,22 +9,22 @@
 import UIKit
 
 final class EasynvestButton: UIButton {
-    
+
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
-        
+
         setupButton()
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
+
         setupButton()
     }
-    
+
     func setupButton() {
         translatesAutoresizingMaskIntoConstraints = false
-        
+
         backgroundColor = UIColor.easynvestGreen
         tintColor = UIColor.white
         layer.borderWidth = 0
@@ -36,4 +36,3 @@ final class EasynvestButton: UIButton {
         titleLabel?.font = UIFont(name: "RationalDisplay-Medium", size: 16)
     }
 }
-

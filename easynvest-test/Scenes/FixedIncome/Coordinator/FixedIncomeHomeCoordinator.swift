@@ -9,7 +9,7 @@
 import UIKit
 
 class FixedIncomeHomeCoordinator: Coordinator {
-    
+
     private let presenter: UINavigationController
     private var fixedIncomeHomeViewController: FixedIncomeHomeViewController?
 //    private var fixedIncomeSimulationResultCoordinator: FixedIncomeSimulationResultCoordinator?
@@ -21,15 +21,15 @@ class FixedIncomeHomeCoordinator: Coordinator {
     func start() {
         let fixedIncomeHomeViewController = FixedIncomeHomeViewController()
         fixedIncomeHomeViewController.title = "Fixed Income Simulator"
-        
+
 //        let fixedIncomeViewModel = FixedIncomeViewModel()
 //        fixedIncomeHomeViewController.viewModel = fixedIncomeViewModel
-        
+
 //        fixedIncomeViewModel.navigationDelegate = self
 //        fixedIncomeViewModel.delegate = fixedIncomeHomeViewController
-        
+
         presenter.pushViewController(fixedIncomeHomeViewController, animated: true)
-        
+
         self.fixedIncomeHomeViewController = fixedIncomeHomeViewController
     }
 }

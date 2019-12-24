@@ -10,7 +10,7 @@ import UIKit
 
 class CustomViewController<CustomView: UIView>: UIViewController {
     var customView: CustomView {
-        return view as! CustomView
+        return view as! CustomView // swiftlint:disable:this force_cast
     }
 
     override func loadView() {

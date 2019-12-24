@@ -9,9 +9,7 @@
 import UIKit
 
 final class FixedIncomeHomeViewController: CustomViewController<FixedIncomeHomeView> {
-    
     // MARK: View Lifecycle
-    
     override func loadView() {
         super.loadView()
         customView.delegate = self

@@ -14,6 +14,9 @@
 		1F09828823A1D87F00467D9D /* FixedIncomeHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09828723A1D87F00467D9D /* FixedIncomeHomeView.swift */; };
 		1F09828A23A1E17800467D9D /* HasCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09828923A1E17800467D9D /* HasCustomView.swift */; };
 		1F09828C23A1E28C00467D9D /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09828B23A1E28C00467D9D /* CustomViewController.swift */; };
+		1F2736B623B1708500B2C47E /* EasynvestTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2736B523B1708500B2C47E /* EasynvestTextField.swift */; };
+		1F2736BB23B17C9B00B2C47E /* UITextField+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2736BA23B17C9B00B2C47E /* UITextField+Border.swift */; };
+		1F2736BE23B1862100B2C47E /* EasynvestTitledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2736BD23B1862100B2C47E /* EasynvestTitledTextField.swift */; };
 		1F512A6923A46F6100E5247A /* ViewCodeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F512A6823A46F6100E5247A /* ViewCodeTemplate.swift */; };
 		1F512A6C23A4920700E5247A /* EasynvestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F512A6B23A4920700E5247A /* EasynvestButton.swift */; };
 		1F512A6E23A494CC00E5247A /* UIColor+EasynvestPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F512A6D23A494CC00E5247A /* UIColor+EasynvestPallete.swift */; };
@@ -54,6 +57,9 @@
 		1F09828723A1D87F00467D9D /* FixedIncomeHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedIncomeHomeView.swift; sourceTree = "<group>"; };
 		1F09828923A1E17800467D9D /* HasCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCustomView.swift; sourceTree = "<group>"; };
 		1F09828B23A1E28C00467D9D /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		1F2736B523B1708500B2C47E /* EasynvestTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestTextField.swift; sourceTree = "<group>"; };
+		1F2736BA23B17C9B00B2C47E /* UITextField+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Border.swift"; sourceTree = "<group>"; };
+		1F2736BD23B1862100B2C47E /* EasynvestTitledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestTitledTextField.swift; sourceTree = "<group>"; };
 		1F512A6823A46F6100E5247A /* ViewCodeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeTemplate.swift; sourceTree = "<group>"; };
 		1F512A6B23A4920700E5247A /* EasynvestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestButton.swift; sourceTree = "<group>"; };
 		1F512A6D23A494CC00E5247A /* UIColor+EasynvestPallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EasynvestPallete.swift"; sourceTree = "<group>"; };
@@ -114,10 +120,9 @@
 		1F09827A23A1D34900467D9D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1F2736B723B17BC300B2C47E /* Extensions */,
 				1F512A7123A49B6900E5247A /* ViewController */,
 				1F512A6723A46E8B00E5247A /* ViewCode */,
-				1F512A6D23A494CC00E5247A /* UIColor+EasynvestPallete.swift */,
-				1F512A6F23A4978200E5247A /* UIColor+Conversions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -173,6 +178,40 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1F2736B723B17BC300B2C47E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F2736B923B17BD700B2C47E /* UITextField */,
+				1F2736B823B17BCC00B2C47E /* UIColor */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1F2736B823B17BCC00B2C47E /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				1F512A6D23A494CC00E5247A /* UIColor+EasynvestPallete.swift */,
+				1F512A6F23A4978200E5247A /* UIColor+Conversions.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		1F2736B923B17BD700B2C47E /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				1F2736BA23B17C9B00B2C47E /* UITextField+Border.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		1F2736BC23B185EA00B2C47E /* Compound */ = {
+			isa = PBXGroup;
+			children = (
+				1F2736BD23B1862100B2C47E /* EasynvestTitledTextField.swift */,
+			);
+			path = Compound;
+			sourceTree = "<group>";
+		};
 		1F512A6723A46E8B00E5247A /* ViewCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +223,9 @@
 		1F512A6A23A491D600E5247A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1F2736BC23B185EA00B2C47E /* Compound */,
 				1F512A6B23A4920700E5247A /* EasynvestButton.swift */,
+				1F2736B523B1708500B2C47E /* EasynvestTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -305,6 +346,7 @@
 				1FA2984623A15BA80032FF1C /* Sources */,
 				1FA2984723A15BA80032FF1C /* Frameworks */,
 				1FA2984823A15BA80032FF1C /* Resources */,
+				1F90BB7123B18AC900DBFAED /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -323,6 +365,7 @@
 				1FA2985C23A15BAA0032FF1C /* Sources */,
 				1FA2985D23A15BAA0032FF1C /* Frameworks */,
 				1FA2985E23A15BAA0032FF1C /* Resources */,
+				31F9A7C9445AF4B2D21FBDE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -447,6 +490,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1F90BB7123B18AC900DBFAED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		31F9A7C9445AF4B2D21FBDE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-easynvest-testTests/Pods-easynvest-testTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-easynvest-testTests/Pods-easynvest-testTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-easynvest-testTests/Pods-easynvest-testTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D73604FCE7FD79974D2F370E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,6 +576,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F09828C23A1E28C00467D9D /* CustomViewController.swift in Sources */,
+				1F2736BB23B17C9B00B2C47E /* UITextField+Border.swift in Sources */,
+				1F2736BE23B1862100B2C47E /* EasynvestTitledTextField.swift in Sources */,
 				1F09828A23A1E17800467D9D /* HasCustomView.swift in Sources */,
 				1F09827F23A1D3A300467D9D /* ApplicationCoordinator.swift in Sources */,
 				1FA2984E23A15BA80032FF1C /* AppDelegate.swift in Sources */,
@@ -506,6 +585,7 @@
 				1F512A7023A4978200E5247A /* UIColor+Conversions.swift in Sources */,
 				1F09828623A1D72600467D9D /* FixedIncomeHomeViewController.swift in Sources */,
 				1F09828323A1D5A200467D9D /* FixedIncomeHomeCoordinator.swift in Sources */,
+				1F2736B623B1708500B2C47E /* EasynvestTextField.swift in Sources */,
 				1F09828823A1D87F00467D9D /* FixedIncomeHomeView.swift in Sources */,
 				1F512A6923A46F6100E5247A /* ViewCodeTemplate.swift in Sources */,
 				1F512A6C23A4920700E5247A /* EasynvestButton.swift in Sources */,

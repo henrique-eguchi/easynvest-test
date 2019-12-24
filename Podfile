@@ -6,10 +6,15 @@ target 'easynvest-test' do
   use_frameworks!
 
   # Pods for easynvest-test
-
+  pod 'SwiftLint'
+  
   target 'easynvest-testTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'Nimble-Snapshots'
+  
   end
 
   target 'easynvest-testUITests' do

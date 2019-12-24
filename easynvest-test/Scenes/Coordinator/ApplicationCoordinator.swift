@@ -16,14 +16,14 @@ class ApplicationCoordinator: Coordinator {
     let window: UIWindow
     let rootViewController: UINavigationController
     let fixedIncomeHomeCoordinator: FixedIncomeHomeCoordinator
-    
+
     init(window: UIWindow) {
         self.window = window
         rootViewController = UINavigationController()
-        
+
         fixedIncomeHomeCoordinator = FixedIncomeHomeCoordinator(presenter: rootViewController)
     }
-    
+
     func start() {
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
