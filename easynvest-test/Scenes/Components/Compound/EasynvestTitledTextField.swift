@@ -9,7 +9,6 @@
 import UIKit
 
 final class EasynvestTitledTextField: UIView {
-
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
 

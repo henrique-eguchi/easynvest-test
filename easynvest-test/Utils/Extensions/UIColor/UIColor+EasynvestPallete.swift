@@ -10,6 +10,8 @@ import UIKit
 
 extension UIColor {
 
+    class var easynvestAlternativeGreen: UIColor { return UIColor.rgb(fromHex: 0x59C5B3) }
+    
     class var easynvestGreen: UIColor { return #colorLiteral(red: 0, green: 0.7843222022, blue: 0.7007431388, alpha: 1) }
 
     class var easynvestWhite: UIColor { return #colorLiteral(red: 0.9529411765, green: 0.9490196078, blue: 0.9176470588, alpha: 1) }

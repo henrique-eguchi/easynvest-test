@@ -13,7 +13,6 @@ protocol FixedIncomeHomeDelegate: class {
 }
 
 final class FixedIncomeHomeView: UIView {
-
     weak var delegate: FixedIncomeHomeDelegate?
 
     override init(frame: CGRect = .zero) {
@@ -45,7 +44,6 @@ final class FixedIncomeHomeView: UIView {
         return view
     }()
     lazy var simulateButton = EasynvestButton(frame: CGRect.zero)
-
 }
 
 extension FixedIncomeHomeView: ViewCodeTemplate {
@@ -100,5 +98,4 @@ extension FixedIncomeHomeView: ViewCodeTemplate {
 
         backgroundColor = .white
     }
-
 }
