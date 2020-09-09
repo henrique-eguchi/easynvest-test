@@ -10,12 +10,14 @@ import UIKit
 
 final class EasynvestTextField: UITextField {
 
+    // Programmatic Initialization
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
 
         setupTextField()
     }
 
+    // Storyboard Initialization
     required init?(coder: NSCoder) {
         super.init(coder: coder)
 
@@ -37,5 +39,7 @@ final class EasynvestTextField: UITextField {
         contentHorizontalAlignment = .center
 
         font = UIFont(name: "RationalDisplay-Light", size: 36)
+        
+        textAlignment = .center
     }
 }

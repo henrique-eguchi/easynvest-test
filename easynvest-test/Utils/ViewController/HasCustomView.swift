@@ -8,14 +8,14 @@
 
 import UIKit
 
-/// The HasCustomView protocol defines a customView property for UIViewControllers to be used in exchange of the regular view property.
+/// The HasCustomView protocol defines a customView property for UIViewControllers to be used in exchange of the regular
+/// view property.
 /// In order for this to work, you have to provide a custom view to your UIViewController at the loadView() method.
 protocol HasCustomView {
     associatedtype CustomView: UIView
 }
 
 extension HasCustomView where Self: UIViewController {
-    
     /// The UIViewController's custom view.
     var customView: CustomView {
         guard let customView = view as? CustomView else {
