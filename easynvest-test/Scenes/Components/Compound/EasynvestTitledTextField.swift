@@ -3,15 +3,15 @@
 //  easynvest-test
 //
 //  Created by Henrique Akiyoshi Eguchi on 23/12/19.
-//  Copyright © 2019 Henrique Akiyoshi Eguchi. All rights reserved.
+//  Copyright © 2020 Henrique Akiyoshi Eguchi. All rights reserved.
 //
 
 import UIKit
 
 final class EasynvestTitledTextField: UIView {
-    override init(frame: CGRect = .zero) {
+    init(frame: CGRect = .zero, textField: EasynvestTextField) {
+        self.textField = textField
         super.init(frame: frame)
-
         setupView()
     }
 
@@ -27,7 +27,7 @@ final class EasynvestTitledTextField: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    lazy var textField = EasynvestTextField(frame: CGRect.zero)
+    var textField: EasynvestTextField
 }
 
 extension EasynvestTitledTextField: ViewCodeTemplate {
@@ -37,18 +37,20 @@ extension EasynvestTitledTextField: ViewCodeTemplate {
     }
 
     func setupConstraints() {
-        titleLabel.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-        titleLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        titleLabel.bottomAnchor.constraint(equalTo: textField.topAnchor, constant: -15).isActive = true
-        textField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        textField.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-        textField.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        textField.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            titleLabel.topAnchor.constraint(equalTo: self.topAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            textField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 15),
+            textField.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            textField.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            textField.heightAnchor.constraint(equalToConstant: 50),
+            textField.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+        ])
     }
 
     func setupAdditionalConfiguration() {
+        translatesAutoresizingMaskIntoConstraints = false
         textField.textAlignment = .center
     }
 }

@@ -6,6 +6,8 @@ target 'easynvest-test' do
   use_frameworks!
 
   # Pods for easynvest-test
+  
+  #Utilities
   pod 'SwiftLint'
   
   target 'easynvest-testTests' do

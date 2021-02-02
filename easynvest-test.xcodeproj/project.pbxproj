@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,6 +29,22 @@
 		1FA2985A23A15BA90032FF1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA2985823A15BA90032FF1C /* LaunchScreen.storyboard */; };
 		1FA2986523A15BAA0032FF1C /* easynvest_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2986423A15BAA0032FF1C /* easynvest_testTests.swift */; };
 		1FA2987023A15BAA0032FF1C /* easynvest_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2986F23A15BAA0032FF1C /* easynvest_testUITests.swift */; };
+		1FA5208C2592BC02002F5717 /* UIControl+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5208B2592BC02002F5717 /* UIControl+Action.swift */; };
+		1FB6770B25AFED0B00ADB775 /* EasynvestPercentageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6770A25AFED0B00ADB775 /* EasynvestPercentageTextField.swift */; };
+		1FB6771025AFF30C00ADB775 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6770F25AFF30C00ADB775 /* UITextField+Extensions.swift */; };
+		1FB6771825AFF39F00ADB775 /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6771725AFF39F00ADB775 /* NumberFormatter+Extensions.swift */; };
+		1FB6771D25AFF3D400ADB775 /* Formatter+Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6771C25AFF3D400ADB775 /* Formatter+Variables.swift */; };
+		1FB6772225AFF41900ADB775 /* StringProtocol+Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6772125AFF41900ADB775 /* StringProtocol+Variables.swift */; };
+		1FB6772A25AFF44200ADB775 /* String+Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6772925AFF44200ADB775 /* String+Variables.swift */; };
+		1FB6772F25AFF46400ADB775 /* Decimal+Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6772E25AFF46400ADB775 /* Decimal+Variables.swift */; };
+		1FB6773425AFF49F00ADB775 /* LosslessStringConvertible+Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6773325AFF49F00ADB775 /* LosslessStringConvertible+Variables.swift */; };
+		1FB6774425B0078500ADB775 /* EasynvestDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6774325B0078500ADB775 /* EasynvestDateTableViewCell.swift */; };
+		1FB6774925B007BE00ADB775 /* EasynvestCurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6774825B007BE00ADB775 /* EasynvestCurrencyTableViewCell.swift */; };
+		1FFC5F1B25994A8F000A6A3B /* FixedIncomeHomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC5F1A25994A8F000A6A3B /* FixedIncomeHomeTableView.swift */; };
+		1FFC5F43259959D5000A6A3B /* EasynvestPercentageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC5F42259959D5000A6A3B /* EasynvestPercentageTableViewCell.swift */; };
+		1FFC5F4925996C6E000A6A3B /* FixedIncomeHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC5F4825996C6E000A6A3B /* FixedIncomeHomeTableViewCell.swift */; };
+		1FFC5F64259BDC4B000A6A3B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC5F63259BDC4B000A6A3B /* UIView+Extensions.swift */; };
+		1FFC5F9B259C0571000A6A3B /* EasynvestCurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC5F9A259C0571000A6A3B /* EasynvestCurrencyTextField.swift */; };
 		63D89657E9E57E7B25A5ACA6 /* Pods_easynvest_test_easynvest_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFBFCBD068094884B015770 /* Pods_easynvest_test_easynvest_testUITests.framework */; };
 		B164A37BC551D1FEB8E97169 /* Pods_easynvest_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2909128AECB82C4392A7041 /* Pods_easynvest_testTests.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +94,22 @@
 		1FA2986B23A15BAA0032FF1C /* easynvest-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "easynvest-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA2986F23A15BAA0032FF1C /* easynvest_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easynvest_testUITests.swift; sourceTree = "<group>"; };
 		1FA2987123A15BAA0032FF1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FA5208B2592BC02002F5717 /* UIControl+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Action.swift"; sourceTree = "<group>"; };
+		1FB6770A25AFED0B00ADB775 /* EasynvestPercentageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestPercentageTextField.swift; sourceTree = "<group>"; };
+		1FB6770F25AFF30C00ADB775 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		1FB6771725AFF39F00ADB775 /* NumberFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		1FB6771C25AFF3D400ADB775 /* Formatter+Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Variables.swift"; sourceTree = "<group>"; };
+		1FB6772125AFF41900ADB775 /* StringProtocol+Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+Variables.swift"; sourceTree = "<group>"; };
+		1FB6772925AFF44200ADB775 /* String+Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Variables.swift"; sourceTree = "<group>"; };
+		1FB6772E25AFF46400ADB775 /* Decimal+Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Variables.swift"; sourceTree = "<group>"; };
+		1FB6773325AFF49F00ADB775 /* LosslessStringConvertible+Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LosslessStringConvertible+Variables.swift"; sourceTree = "<group>"; };
+		1FB6774325B0078500ADB775 /* EasynvestDateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestDateTableViewCell.swift; sourceTree = "<group>"; };
+		1FB6774825B007BE00ADB775 /* EasynvestCurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestCurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		1FFC5F1A25994A8F000A6A3B /* FixedIncomeHomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedIncomeHomeTableView.swift; sourceTree = "<group>"; };
+		1FFC5F42259959D5000A6A3B /* EasynvestPercentageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestPercentageTableViewCell.swift; sourceTree = "<group>"; };
+		1FFC5F4825996C6E000A6A3B /* FixedIncomeHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedIncomeHomeTableViewCell.swift; sourceTree = "<group>"; };
+		1FFC5F63259BDC4B000A6A3B /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		1FFC5F9A259C0571000A6A3B /* EasynvestCurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestCurrencyTextField.swift; sourceTree = "<group>"; };
 		5AA66D8A8E50D50E9CF8C0CF /* Pods-easynvest-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-test.debug.xcconfig"; path = "Target Support Files/Pods-easynvest-test/Pods-easynvest-test.debug.xcconfig"; sourceTree = "<group>"; };
 		6FFBFCBD068094884B015770 /* Pods_easynvest_test_easynvest_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easynvest_test_easynvest_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7671893D19CF5F90E191004A /* Pods-easynvest-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-test.release.xcconfig"; path = "Target Support Files/Pods-easynvest-test/Pods-easynvest-test.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,8 +204,10 @@
 		1F09828423A1D6BC00467D9D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1F09828523A1D72600467D9D /* FixedIncomeHomeViewController.swift */,
+				1FFC5F4725996C3F000A6A3B /* Cells */,
+				1FFC5F1A25994A8F000A6A3B /* FixedIncomeHomeTableView.swift */,
 				1F09828723A1D87F00467D9D /* FixedIncomeHomeView.swift */,
+				1F09828523A1D72600467D9D /* FixedIncomeHomeViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,32 +215,21 @@
 		1F2736B723B17BC300B2C47E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				1F2736B923B17BD700B2C47E /* UITextField */,
-				1F2736B823B17BCC00B2C47E /* UIColor */,
+				1FFC5F62259BDC35000A6A3B /* UIKit */,
+				1FB6771725AFF39F00ADB775 /* NumberFormatter+Extensions.swift */,
+				1FB6771C25AFF3D400ADB775 /* Formatter+Variables.swift */,
+				1FB6772125AFF41900ADB775 /* StringProtocol+Variables.swift */,
+				1FB6772925AFF44200ADB775 /* String+Variables.swift */,
+				1FB6772E25AFF46400ADB775 /* Decimal+Variables.swift */,
+				1FB6773325AFF49F00ADB775 /* LosslessStringConvertible+Variables.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		1F2736B823B17BCC00B2C47E /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				1F512A6D23A494CC00E5247A /* UIColor+EasynvestPallete.swift */,
-				1F512A6F23A4978200E5247A /* UIColor+Conversions.swift */,
-			);
-			path = UIColor;
-			sourceTree = "<group>";
-		};
-		1F2736B923B17BD700B2C47E /* UITextField */ = {
-			isa = PBXGroup;
-			children = (
-				1F2736BA23B17C9B00B2C47E /* UITextField+Border.swift */,
-			);
-			path = UITextField;
 			sourceTree = "<group>";
 		};
 		1F2736BC23B185EA00B2C47E /* Compound */ = {
 			isa = PBXGroup;
 			children = (
+				1FFC5F33259956D8000A6A3B /* Cells */,
 				1F2736BD23B1862100B2C47E /* EasynvestTitledTextField.swift */,
 			);
 			path = Compound;
@@ -226,6 +249,8 @@
 				1F2736BC23B185EA00B2C47E /* Compound */,
 				1F512A6B23A4920700E5247A /* EasynvestButton.swift */,
 				1F2736B523B1708500B2C47E /* EasynvestTextField.swift */,
+				1FFC5F9A259C0571000A6A3B /* EasynvestCurrencyTextField.swift */,
+				1FB6770A25AFED0B00ADB775 /* EasynvestPercentageTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -310,6 +335,37 @@
 				1FA2987123A15BAA0032FF1C /* Info.plist */,
 			);
 			path = "easynvest-testUITests";
+			sourceTree = "<group>";
+		};
+		1FFC5F33259956D8000A6A3B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1FFC5F42259959D5000A6A3B /* EasynvestPercentageTableViewCell.swift */,
+				1FB6774325B0078500ADB775 /* EasynvestDateTableViewCell.swift */,
+				1FB6774825B007BE00ADB775 /* EasynvestCurrencyTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1FFC5F4725996C3F000A6A3B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1FFC5F4825996C6E000A6A3B /* FixedIncomeHomeTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1FFC5F62259BDC35000A6A3B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1F512A6D23A494CC00E5247A /* UIColor+EasynvestPallete.swift */,
+				1F512A6F23A4978200E5247A /* UIColor+Conversions.swift */,
+				1FFC5F63259BDC4B000A6A3B /* UIView+Extensions.swift */,
+				1FA5208B2592BC02002F5717 /* UIControl+Action.swift */,
+				1F2736BA23B17C9B00B2C47E /* UITextField+Border.swift */,
+				1FB6770F25AFF30C00ADB775 /* UITextField+Extensions.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		4F10080884D85CE117508615 /* Pods */ = {
@@ -577,17 +633,33 @@
 			files = (
 				1F09828C23A1E28C00467D9D /* CustomViewController.swift in Sources */,
 				1F2736BB23B17C9B00B2C47E /* UITextField+Border.swift in Sources */,
+				1FFC5F9B259C0571000A6A3B /* EasynvestCurrencyTextField.swift in Sources */,
+				1FFC5F64259BDC4B000A6A3B /* UIView+Extensions.swift in Sources */,
+				1FB6770B25AFED0B00ADB775 /* EasynvestPercentageTextField.swift in Sources */,
 				1F2736BE23B1862100B2C47E /* EasynvestTitledTextField.swift in Sources */,
+				1FA5208C2592BC02002F5717 /* UIControl+Action.swift in Sources */,
 				1F09828A23A1E17800467D9D /* HasCustomView.swift in Sources */,
+				1FFC5F4925996C6E000A6A3B /* FixedIncomeHomeTableViewCell.swift in Sources */,
 				1F09827F23A1D3A300467D9D /* ApplicationCoordinator.swift in Sources */,
+				1FB6774425B0078500ADB775 /* EasynvestDateTableViewCell.swift in Sources */,
 				1FA2984E23A15BA80032FF1C /* AppDelegate.swift in Sources */,
+				1FFC5F1B25994A8F000A6A3B /* FixedIncomeHomeTableView.swift in Sources */,
+				1FB6773425AFF49F00ADB775 /* LosslessStringConvertible+Variables.swift in Sources */,
 				1F512A6E23A494CC00E5247A /* UIColor+EasynvestPallete.swift in Sources */,
+				1FB6772F25AFF46400ADB775 /* Decimal+Variables.swift in Sources */,
+				1FFC5F43259959D5000A6A3B /* EasynvestPercentageTableViewCell.swift in Sources */,
+				1FB6771825AFF39F00ADB775 /* NumberFormatter+Extensions.swift in Sources */,
 				1F512A7023A4978200E5247A /* UIColor+Conversions.swift in Sources */,
 				1F09828623A1D72600467D9D /* FixedIncomeHomeViewController.swift in Sources */,
 				1F09828323A1D5A200467D9D /* FixedIncomeHomeCoordinator.swift in Sources */,
 				1F2736B623B1708500B2C47E /* EasynvestTextField.swift in Sources */,
+				1FB6772A25AFF44200ADB775 /* String+Variables.swift in Sources */,
 				1F09828823A1D87F00467D9D /* FixedIncomeHomeView.swift in Sources */,
 				1F512A6923A46F6100E5247A /* ViewCodeTemplate.swift in Sources */,
+				1FB6771025AFF30C00ADB775 /* UITextField+Extensions.swift in Sources */,
+				1FB6772225AFF41900ADB775 /* StringProtocol+Variables.swift in Sources */,
+				1FB6774925B007BE00ADB775 /* EasynvestCurrencyTableViewCell.swift in Sources */,
+				1FB6771D25AFF3D400ADB775 /* Formatter+Variables.swift in Sources */,
 				1F512A6C23A4920700E5247A /* EasynvestButton.swift in Sources */,
 				1FA2985023A15BA80032FF1C /* SceneDelegate.swift in Sources */,
 			);

@@ -3,21 +3,21 @@
 //  easynvest-test
 //
 //  Created by Henrique Akiyoshi Eguchi on 23/12/19.
-//  Copyright © 2019 Henrique Akiyoshi Eguchi. All rights reserved.
+//  Copyright © 2020 Henrique Akiyoshi Eguchi. All rights reserved.
 //
 
 import UIKit
 
-final class EasynvestTextField: UITextField {
+class EasynvestTextField: UITextField {
 
-    // Programmatic Initialization
+    // MARK: - Initializer
+
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
 
         setupTextField()
     }
 
-    // Storyboard Initialization
     required init?(coder: NSCoder) {
         super.init(coder: coder)
 
@@ -28,18 +28,44 @@ final class EasynvestTextField: UITextField {
         translatesAutoresizingMaskIntoConstraints = false
 
         backgroundColor = UIColor.clear
-        tintColor = #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
-        textColor = #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        tintColor = UIColor.easynvestDarkGrey
+        textColor = UIColor.easynvestDarkGrey
 
-        setBottomBorder(withColor: #colorLiteral(red: 0.9352387786, green: 0.9319420457, blue: 0.9283466935, alpha: 1))
-        attributedPlaceholder = NSAttributedString(string: attributedPlaceholder?.string ?? "",
-                                                   attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.5988404155, green: 0.5989291668, blue: 0.598821044, alpha: 1)])
+        setBottomBorder(withColor: UIColor.easynvestLightWhite)
+        attributedPlaceholder = NSAttributedString(string: attributedPlaceholder?.string ?? String.empty,
+                                                   attributes: [
+                                                    NSAttributedString.Key.foregroundColor: UIColor.easynvestSoftGray
+                                                   ])
 
         contentVerticalAlignment = .center
         contentHorizontalAlignment = .center
 
         font = UIFont(name: "RationalDisplay-Light", size: 36)
-        
+
         textAlignment = .center
+
+        addDoneCancelToolbar()
+    }
+
+    func addDoneCancelToolbar(onDone: (target: Any, action: Selector)? = nil,
+                              onCancel: (target: Any, action: Selector)? = nil) {
+        let onDone = onDone ?? (target: self, action: #selector(doneButtonTapped))
+
+        let toolbar = UIToolbar()
+        toolbar.barStyle = .default
+        let bar = UIBarButtonItem(title: "Done", style: .done, target: onDone.target, action: onDone.action)
+        bar.tintColor = UIColor.easynvestGreen
+        toolbar.items = [
+            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil),
+            bar
+        ]
+        toolbar.sizeToFit()
+
+        self.inputAccessoryView = toolbar
+    }
+
+    @objc
+    func doneButtonTapped() {
+        self.resignFirstResponder()
     }
 }

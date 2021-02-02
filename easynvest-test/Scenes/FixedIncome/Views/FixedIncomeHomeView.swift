@@ -3,17 +3,19 @@
 //  easynvest-test
 //
 //  Created by Henrique Akiyoshi Eguchi on 11/12/19.
-//  Copyright © 2019 Henrique Akiyoshi Eguchi. All rights reserved.
+//  Copyright © 2020 Henrique Akiyoshi Eguchi. All rights reserved.
 //
 
 import UIKit
 
 protocol FixedIncomeHomeDelegate: class {
-    func didTapSimulate()
+    func didTapSimulate(_ sender: UIButton)
 }
 
 final class FixedIncomeHomeView: UIView {
     weak var delegate: FixedIncomeHomeDelegate?
+
+    private let padding: CGFloat = 8
 
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
@@ -28,74 +30,59 @@ final class FixedIncomeHomeView: UIView {
         setupView()
     }
 
-    lazy var investedAmountView = EasynvestTitledTextField(frame: CGRect.zero)
-    lazy var maturityDateView = EasynvestTitledTextField(frame: CGRect.zero)
-    lazy var rateView = EasynvestTitledTextField(frame: CGRect.zero)
-
     //lazy - Permite chamar método dentro da closure de criação
-    lazy var fixedIncomeFormStackView: UIStackView = {
-        let view = UIStackView()
-        view.spacing = 25.0
-        view.distribution = .fillProportionally
-        view.alignment = .center
-        view.axis = .vertical
-
+    private lazy var containerView: UIView = {
+       let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    lazy var simulateButton = EasynvestButton(frame: CGRect.zero)
+    lazy var fixedIncomeTableView = FixedIncomeHomeTableView()
+    lazy var simulateButton: EasynvestButton = {
+        let button = EasynvestButton(frame: CGRect.zero)
+        button.addAction(for: .touchUpInside) { [weak self] in
+            guard let self = self else { return }
+            self.delegate?.didTapSimulate(button)
+        }
+        return button
+    }()
+
+    private var containerViewBottomConstraint: NSLayoutConstraint?
 }
 
 extension FixedIncomeHomeView: ViewCodeTemplate {
     func buildViewHierarchy() {
-        fixedIncomeFormStackView.addArrangedSubview(investedAmountView)
-        fixedIncomeFormStackView.addArrangedSubview(maturityDateView)
-        fixedIncomeFormStackView.addArrangedSubview(rateView)
-
-        addSubview(fixedIncomeFormStackView)
-        addSubview(simulateButton)
+        containerView.addSubviews(fixedIncomeTableView, simulateButton)
+        addSubview(containerView)
     }
 
     func setupConstraints() {
-        fixedIncomeFormStackView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor,
-                                                      constant: 15).isActive = true
-        fixedIncomeFormStackView.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor,
-                                                          constant: 15).isActive = true
-        fixedIncomeFormStackView.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor,
-                                                           constant: -15).isActive = true
+        let safeArea = safeAreaLayoutGuide
+        NSLayoutConstraint.activate([
+            containerView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: padding),
+            containerView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: padding),
+            containerView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -padding),
+            fixedIncomeTableView.topAnchor.constraint(equalTo: containerView.topAnchor),
+            fixedIncomeTableView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+            fixedIncomeTableView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+            fixedIncomeTableView.bottomAnchor.constraint(equalTo: simulateButton.topAnchor, constant: -padding),
+            simulateButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+            simulateButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+            simulateButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
+            simulateButton.heightAnchor.constraint(equalToConstant: 50)
+        ])
 
-        investedAmountView.leadingAnchor.constraint(equalTo: fixedIncomeFormStackView.leadingAnchor).isActive = true
-        investedAmountView.trailingAnchor.constraint(equalTo: fixedIncomeFormStackView.trailingAnchor).isActive = true
-
-        maturityDateView.leadingAnchor.constraint(equalTo: fixedIncomeFormStackView.leadingAnchor).isActive = true
-        maturityDateView.trailingAnchor.constraint(equalTo: fixedIncomeFormStackView.trailingAnchor).isActive = true
-
-        rateView.leadingAnchor.constraint(equalTo: fixedIncomeFormStackView.leadingAnchor).isActive = true
-        rateView.trailingAnchor.constraint(equalTo: fixedIncomeFormStackView.trailingAnchor).isActive = true
-
-        simulateButton.topAnchor.constraint(greaterThanOrEqualTo: fixedIncomeFormStackView.bottomAnchor,
-                                            constant: -15).isActive = true
-        simulateButton.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor,
-                                                constant: 15).isActive = true
-        simulateButton.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor,
-                                                 constant: -15).isActive = true
-        simulateButton.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor,
-                                               constant: -15).isActive = true
-        simulateButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        containerViewBottomConstraint = containerView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: -padding)
+        containerViewBottomConstraint?.isActive = true
     }
 
     func setupAdditionalConfiguration() {
-        investedAmountView.titleLabel.text = "Quanto você gostaria de aplicar? *"
-        investedAmountView.textField.placeholder = "R$"
-
-        maturityDateView.titleLabel.text = "Qual a data de vencimento do investimento? *"
-        maturityDateView.textField.placeholder = "dia/mês/ano"
-
-        rateView.titleLabel.text = "Qual o percentual do CDI do investimento? *"
-        rateView.textField.placeholder = "100%"
-
+        backgroundColor = UIColor.white
         simulateButton.setTitle("Simular", for: .normal)
+    }
+}
 
-        backgroundColor = .white
+extension FixedIncomeHomeView {
+    func moveSimulateButtonAboveKeyboard(isKeyboardVisible: Bool, keyboardHeight: CGFloat) {
+        containerViewBottomConstraint?.constant = isKeyboardVisible ? -padding - keyboardHeight : -padding
     }
 }

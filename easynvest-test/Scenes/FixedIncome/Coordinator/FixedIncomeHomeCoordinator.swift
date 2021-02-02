@@ -3,7 +3,7 @@
 //  easynvest-test
 //
 //  Created by Henrique Akiyoshi Eguchi on 11/12/19.
-//  Copyright © 2019 Henrique Akiyoshi Eguchi. All rights reserved.
+//  Copyright © 2020 Henrique Akiyoshi Eguchi. All rights reserved.
 //
 
 import UIKit
@@ -21,15 +21,15 @@ class FixedIncomeHomeCoordinator: Coordinator {
     func start() {
         let fixedIncomeHomeViewController = FixedIncomeHomeViewController()
         fixedIncomeHomeViewController.title = "Fixed Income Simulator"
-
-//        let fixedIncomeViewModel = FixedIncomeViewModel()
-//        fixedIncomeHomeViewController.viewModel = fixedIncomeViewModel
-
+//
+////        let fixedIncomeViewModel = FixedIncomeViewModel()
+////        fixedIncomeHomeViewController.viewModel = fixedIncomeViewModel
+//
 //        fixedIncomeViewModel.navigationDelegate = self
 //        fixedIncomeViewModel.delegate = fixedIncomeHomeViewController
-
+//
         presenter.pushViewController(fixedIncomeHomeViewController, animated: true)
-
+//
         self.fixedIncomeHomeViewController = fixedIncomeHomeViewController
     }
 }

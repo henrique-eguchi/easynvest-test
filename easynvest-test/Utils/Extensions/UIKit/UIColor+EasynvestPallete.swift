@@ -3,7 +3,7 @@
 //  easynvest-test
 //
 //  Created by Henrique Akiyoshi Eguchi on 14/12/19.
-//  Copyright © 2019 Henrique Akiyoshi Eguchi. All rights reserved.
+//  Copyright © 2020 Henrique Akiyoshi Eguchi. All rights reserved.
 //
 
 import UIKit
@@ -23,4 +23,10 @@ extension UIColor {
     class var easynvestYellow: UIColor { return #colorLiteral(red: 0.9568627451, green: 0.7411764706, blue: 0.2549019608, alpha: 1) }
 
     class var easynvestBlue: UIColor { return #colorLiteral(red: 0.4117647059, green: 0.7882352941, blue: 0.8431372549, alpha: 1) }
+    
+    class var easynvestLightWhite: UIColor { return #colorLiteral(red: 0.9352387786, green: 0.9319420457, blue: 0.9283466935, alpha: 1) }
+    
+    class var easynvestSoftGray: UIColor { return #colorLiteral(red: 0.5988404155, green: 0.5989291668, blue: 0.598821044, alpha: 1) }
+    
+    class var easynvestDarkGrey: UIColor { return #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1) }
 }
