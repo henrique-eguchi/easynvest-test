@@ -16,7 +16,6 @@ target 'easynvest-test' do
     pod 'Quick'
     pod 'Nimble'
     pod 'Nimble-Snapshots'
-  
   end
 
   target 'easynvest-testUITests' do
